@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: account-system-order
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://8.130.181.162:8848
+        username: nacos
+        password: nacos
+server:
+  port: 9093
+dubbo:
+  application:
+    name: account-system-order
+    id: account-system-order
+  registry:
+      address: spring-cloud://localhost
+  protocol:
+    name: dubbo
+    port: -1
+  scan:
+    base-packages: com.zx.account.system.order.service
+  cloud:
+    subscribed-services: account-system-order

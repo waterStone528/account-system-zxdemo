@@ -1,0 +1,8 @@
+2021-10-02 22:27:00,721 INFO DEFAULT_GROUP@@account-system-api {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.31.171:9001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-10-02 22:27:00,726 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@account-system-api, ips: 192.168.31.171:9001_true,
+
+2021-10-02 22:29:14,571 INFO DEFAULT_GROUP@@account-system-api {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.31.171:9001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2021-10-02 22:29:14,571 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@account-system-api, ips: 
+

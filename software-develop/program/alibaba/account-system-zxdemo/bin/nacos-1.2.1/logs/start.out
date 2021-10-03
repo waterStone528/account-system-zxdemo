@@ -1,0 +1,57 @@
+/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/bin/java  -Xms512m -Xmx512m -Xmn256m -Dnacos.standalone=true -Djava.ext.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/lib/ext -Xloggc:/Users/zhangxiong/my/software-develop/program/alibaba/account-system-zxdemo/bin/nacos-1.2.1/logs/nacos_gc.log -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=10 -XX:GCLogFileSize=100M -Dloader.path=/Users/zhangxiong/my/software-develop/program/alibaba/account-system-zxdemo/bin/nacos-1.2.1/plugins/health,/Users/zhangxiong/my/software-develop/program/alibaba/account-system-zxdemo/bin/nacos-1.2.1/plugins/cmdb,/Users/zhangxiong/my/software-develop/program/alibaba/account-system-zxdemo/bin/nacos-1.2.1/plugins/mysql -Dnacos.home=/Users/zhangxiong/my/software-develop/program/alibaba/account-system-zxdemo/bin/nacos-1.2.1 -jar /Users/zhangxiong/my/software-develop/program/alibaba/account-system-zxdemo/bin/nacos-1.2.1/target/nacos-server.jar  --spring.config.location=classpath:/,classpath:/config/,file:./,file:./config/,file:/Users/zhangxiong/my/software-develop/program/alibaba/account-system-zxdemo/bin/nacos-1.2.1/conf/ --logging.config=/Users/zhangxiong/my/software-develop/program/alibaba/account-system-zxdemo/bin/nacos-1.2.1/conf/nacos-logback.xml --server.max-http-header-size=524288
+
+         ,--.
+       ,--.'|
+   ,--,:  : |                                           Nacos 1.2.1
+,`--.'`|  ' :                       ,---.               Running in stand alone mode, All function modules
+|   :  :  | |                      '   ,'\   .--.--.    Port: 8848
+:   |   \ | :  ,--.--.     ,---.  /   /   | /  /    '   Pid: 1043
+|   : '  '; | /       \   /     \.   ; ,. :|  :  /`./   Console: http://192.168.31.171:8848/nacos/index.html
+'   ' ;.    ;.--.  .-. | /    / ''   | |: :|  :  ;_
+|   | | \   | \__\/: . ..    ' / '   | .; : \  \    `.      https://nacos.io
+'   : |  ; .' ," .--.; |'   ; :__|   :    |  `----.   \
+|   | '`--'  /  /  ,.  |'   | '.'|\   \  /  /  /`--'  /
+'   : |     ;  :   .'   \   :    : `----'  '--'.     /
+;   |.'     |  ,     .-./\   \  /            `--'---'
+'---'        `--`---'     `----'
+
+2021-10-02 22:23:50,805 INFO Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$a7abf541] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-10-02 22:23:50,925 INFO Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-10-02 22:23:50,929 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@26abb146' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-10-02 22:23:50,930 INFO Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$cc8097f3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-10-02 22:23:50,936 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2021-10-02 22:23:51,755 INFO Tomcat initialized with port(s): 8848 (http)
+
+2021-10-02 22:23:51,978 INFO Root WebApplicationContext: initialization completed in 3966 ms
+
+2021-10-02 22:23:56,941 INFO Initializing ExecutorService 'applicationTaskExecutor'
+
+2021-10-02 22:23:57,203 INFO Adding welcome page: class path resource [static/index.html]
+
+2021-10-02 22:23:57,682 INFO Creating filter chain: Ant [pattern='/**'], []
+
+2021-10-02 22:23:57,740 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1623134f, org.springframework.security.web.context.SecurityContextPersistenceFilter@150ab4ed, org.springframework.security.web.header.HeaderWriterFilter@4c37b5b, org.springframework.security.web.csrf.CsrfFilter@4e28bdd1, org.springframework.security.web.authentication.logout.LogoutFilter@546ccad7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@50fe837a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ce33a58, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a527389, org.springframework.security.web.session.SessionManagementFilter@71b3bc45, org.springframework.security.web.access.ExceptionTranslationFilter@24d4d7c9]
+
+2021-10-02 22:23:57,849 INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+
+2021-10-02 22:23:57,887 INFO Initializing ExecutorService 'taskScheduler'
+
+2021-10-02 22:23:58,036 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2021-10-02 22:23:58,047 INFO Nacos logs files: /Users/zhangxiong/my/software-develop/program/alibaba/account-system-zxdemo/bin/nacos-1.2.1/logs/
+
+2021-10-02 22:23:58,047 INFO Nacos conf files: /Users/zhangxiong/my/software-develop/program/alibaba/account-system-zxdemo/bin/nacos-1.2.1/conf/
+
+2021-10-02 22:23:58,047 INFO Nacos data files: /Users/zhangxiong/my/software-develop/program/alibaba/account-system-zxdemo/bin/nacos-1.2.1/data/
+
+2021-10-02 22:23:58,047 INFO Nacos started successfully in stand alone mode.
+
+2021-10-02 22:23:58,198 INFO Initializing Servlet 'dispatcherServlet'
+
+2021-10-02 22:23:58,215 INFO Completed initialization in 17 ms
+
